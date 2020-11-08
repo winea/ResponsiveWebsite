@@ -1,0 +1,181 @@
+﻿<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Responsive Bootstrap</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min2.css" rel="stylesheet" />
+        
+         <!--deixar este sempre como ultimo pois se permite alterar acima-->
+        <link href="css/app.css" rel="stylesheet" />
+
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header" role="navigation">
+                <div class="container-fluid">
+                    <!-- versão mobile -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" 
+                                data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#top"><img src="img/site-logo-white-70pct.png" alt="logo"></a>
+                    </div>
+    
+                    <!-- Para versao tablet e desktop -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sports.html">Videos</a></li>
+                            <li><a href="activities.html">Imagens</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+
+        <div class="container-fluid">
+            <div class="sports-icon-list sports-list-top visible-md">
+                <div>
+                    <a href="downhill.html">
+                        <img src="img/icon-downhill.png" alt="icons">
+                        <h6>downhill</h6>
+                    </a>
+                    <a href="snowboard.html">
+                        <img src="img/icon-snowboard.png" alt="icons">
+                        <h6>snowboard</h6>
+                    </a>
+                    <a href="bobsled.html">
+                        <img src="img/icon-bobsled.png" alt="icons">
+                        <h6>bobsled</h6>
+                    </a>
+                    <a href="cross-country.html">
+                        <img src="img/icon-cross-country.png" alt="icons">
+                        <h6>cross-country</h6>
+                    </a>
+                    <a href="biathlon.html">
+                        <img src="img/icon-biathlon.png" alt="icons">
+                        <h6>biathlon</h6>
+                    </a>
+                </div>  
+            </div>
+        </div>
+
+        <div class="container-fluid container-sm-height">
+            <div class="row row-sm-height">
+                <!--Ira alterar a posição dos artigos e aside para mobile/desktop push and pull-->  
+                <!--section class="col-sm-8 col-sm-push-2" total do grid e 12 para ocupar width total pagina-->
+                <section class="col-sm-9 col-lg-8 col-sm-push-3 col-lg-push-2 col-sm-height">
+                    <article>
+                        <h2>Visitar Lagos</h2>
+                        <img src="img/lago-moraine-canada.jpg" alt="">
+                        <div class="row">
+                            <p class="col-sm-10">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <button class="col-sm-2 btn btn-primary">More...</button>
+                        </div>
+                    </article>
+
+                    <article>
+                        <h2>Esquiar Montanhas</h2>
+                        <img src="img/esquiar-santiago-chile.jpg" alt="">
+                        <div class="row">
+                            <p class="col-sm-10">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <button class="col-sm-2 btn btn-primary">More...</button>
+                        </div>
+                    </article>
+
+                    <article>
+                        <h2>Visitar Praias</h2>
+                        <img src="img/praias.jpg" alt="">
+                        <div class="row">
+                            <p class="col-sm-10">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                            </p>
+                            <button class="col-sm-2 btn btn-info">More...</button>
+                        </div>
+                    </article>
+                </section>
+
+                <aside class="col-sm-3 col-lg-2 col-sm-pull-9 col-lg-pull-8 col-sm-height">
+                    <h4 class="range-title"><b>Tipo Montanha</b></h4>
+                        <div class="range-list">
+                            <a href="Suiça.html">
+                                <img src="img/range-1.png" alt="montanha">
+                                <h4>Matterhorn, Suíça</h4>
+                            </a>
+
+                            <a href="Italia.html">
+                                <img src="img/range-2.png" alt="montanha">
+                                <h4>Tre Cime di Lavaredo, Itália</h4>
+                            </a>
+
+                            <a href="Peru.html">
+                                <img src="img/range-3.png" alt="montanha">
+                                <h4>Alpamayo, Peru</h4>
+                            </a>
+
+                            <a href="Alasca.html">
+                                <img src="img/range-4.png" alt="montanha">
+                                <h4>Denali, Alasca</h4>
+                            </a>
+
+                            <a href="Peru2.html">
+                                <img src="img/range-5.png" alt="montanha">
+                                <h4>Huayna Picchu, Peru</h4>
+                            </a>
+                        </div>
+                </aside>
+
+                <aside class="sports-icon-list col-xs-12 col-md-2 hidden-md col-sm-height">
+                    <a href="downhill.html">
+                        <img src="img/icon-downhill.png" alt="icons">
+                        <h6>downhill</h6>
+
+                    </a>
+                    <a href="snowboard.html">
+                        <img src="img/icon-snowboard.png" alt="icons">
+                        <h6>snowboard</h6>
+                    </a>
+                    <a href="bobsled.html">
+                        <img src="img/icon-bobsled.png" alt="icons">
+                        <h6>bobsled</h6>
+                    </a>
+                    <a href="cross-country.html">
+                        <img src="img/icon-cross-country.png" alt="icons">
+                        <h6>cross-country</h6>
+                    </a>
+                    <a href="biathlon.html">
+                        <img src="img/icon-biathlon.png" alt="icons">
+                        <h6>biathlon</h6>
+                    </a>
+
+                </aside>
+            </div>
+        </div>
+
+        <footer class="container-fluid">
+            <h1>FOOTER</h1>
+        </footer>
+        
+    <!--Para ativar botoes add scripts por exemplo o dropdown no navbar-->
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--Para fazer a animaçao do navbar-->
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+
+   
+    </body>
+</html>
+

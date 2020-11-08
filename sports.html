@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <title>Responsive Bootstrap</title>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+        <link href="css/bootstrap.min2.css" rel="stylesheet" />
+         <!--para permitir video de background-->
+         <link href="css/jquery.fs.wallpaper.css" rel="stylesheet"/>
+
+         <!--deixar este sempre como ultimo pois se permite alterar acima-->
+        <link href="css/app.css" rel="stylesheet" />
+       
+
+    </head>
+
+    <body>
+        <header id="video-wallpaper" class="videoClass">
+            <nav class="navbar navbar-inverse navbar-fixed-top cbp-af-header" role="navigation">
+                <div class="container-fluid">
+                    <!-- versão mobile -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" 
+                                data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a href="#top"><img src="img/site-logo-white-70pct.png" alt="logo"></a>
+                    </div>
+    
+                    <!-- Para versao tablet e desktop -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="sports.html">Videos</a></li>
+                            <li><a href="activities.html">Imagens</a></li>
+                            <li><a href="#contact">Contato</a></li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </header>
+        <div class="container-fluid">
+            <div class="row content-filler">
+            </div>
+            <!--Exemplo de video como background script add jquery.fs.wallpaper.min-->
+            <div class="row">
+                <video src="media/videoex.mp4" controls width="50%"></video>   
+            </div>
+            <div class="row">
+                
+                <!--Para aparecer a imagem e necessario colocar o tamanho height ver o script abaixo
+                <div class="fill-screen fixed-attachment" style="background-image: url(img/Suica.jpg);">
+                </div>
+            </div>
+            <div class="row content-filler">-->
+        </div>
+        
+        <footer class="container-fluid">
+            <h1>FOOTER</h1>
+        </footer>
+    <!--Para ativar botoes add scripts por exemplo o dropdown no navbar-->
+    <script src="js/jquery-1.9.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!--Para fazer a animaçao do navbar-->
+    <script src="js/classie.js"></script>
+    <script src="js/cbpAnimatedHeader.js"></script>
+    <!--Script para fazer video de background-->
+    <script src="js/jquery.fs.wallpaper.min.js"></script>
+
+     <script>
+        $(function () {
+            $(window).on("load resize", function () {
+                $(".fill-screen").css("height", window.innerHeight);
+            });
+            //Script para imagem como background
+            $("#video-wallpaper").wallpaper({
+                source: {
+                    poster: "img/bikes.png",
+                    mp4: "media/videoex.mp4",
+                    //video: "//www.youtube.com/watch?v=aR-KAldshAE"
+                }
+            });
+           
+        });
+    </script>
+    </body>
+</html>
+
